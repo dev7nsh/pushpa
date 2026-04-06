@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa - Portfolio</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor Setup -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"><span>P</span>ushpa</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero hidden">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Pushpa</span></h1>
+            <p>A passionate developer weaving elegant solutions with modern web technologies to create impactful user experiences.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-graphic">
+            <div class="blob"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about hidden">
+        <h2><span class="highlight">About</span> Me</h2>
+        <div class="about-text">
+            <p>I have a passion for creating dynamic and interactive web applications. My goal is to build software that not only functions perfectly but also provides an engaging user experience. I continuously try to improve my skills and learn new technologies.</p>
+            <div class="skills">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects hidden">
+        <h2>My <span class="highlight">Projects</span></h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Web Development</h3>
+                    <p>A comprehensive web development framework designed to streamline your workflow and enhance user engagement.</p>
+                    <a href="#" class="btn-small">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Interactive UI</h3>
+                    <p>An amazing exploration into user interfaces with beautiful animations and seamless interactions.</p>
+                    <a href="#" class="btn-small">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Data Analytics</h3>
+                    <p>A beautiful dashboard providing deeper insights into user metrics and analytical paradigms.</p>
+                    <a href="#" class="btn-small">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact hidden">
+        <h2><span class="highlight">Contact</span> Me</h2>
+        <form class="contact-form" action="#" method="POST">
+            <div class="input-group">
+                <input type="text" id="name" placeholder=" " required>
+                <label for="name">Name</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="5" placeholder=" " required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Pushpa. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
