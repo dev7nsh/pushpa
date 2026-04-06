@@ -2,7 +2,7 @@
 const cursorDot = document.querySelector('[data-cursor-dot]');
 const cursorOutline = document.querySelector('[data-cursor-outline]');
 
-window.addEventListener('mousemove', function(e) {
+window.addEventListener('mousemove', function (e) {
     const posX = e.clientX;
     const posY = e.clientY;
 
@@ -37,7 +37,7 @@ interactiveElements.forEach(el => {
 // Scroll Animations using Intersection Observer
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
     });
@@ -45,3 +45,14 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Project Card click to expand
+const projectCards = document.querySelectorAll('.project-card');
+projectCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+        // Prevent expanding if clicking on a link inside the card
+        if (!e.target.closest('a')) {
+            card.classList.toggle('expanded');
+        }
+    });
+});
